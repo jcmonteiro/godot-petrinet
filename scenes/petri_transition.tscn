@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://hfjrmoi54toa"]
+
+[ext_resource type="Script" path="res://scripts/petri/PetriTransition.cs" id="1_n6oxk"]
+
+[node name="Transition" type="Node" node_paths=PackedStringArray("InputArcs", "OutputArcs")]
+script = ExtResource("1_n6oxk")
+InputArcs = []
+OutputArcs = []
