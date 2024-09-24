@@ -205,16 +205,16 @@ shape = SubResource("CapsuleShape2D_6sr10")
 
 [node name="AnimationNetwork" parent="." instance=ExtResource("3_b1lop")]
 
-[node name="OnMove" parent="AnimationNetwork" node_paths=PackedStringArray("InputArcs", "OutputArcs") instance=ExtResource("4_cfr28")]
+[node name="OnAttack" parent="AnimationNetwork" node_paths=PackedStringArray("InputArcs", "OutputArcs") instance=ExtResource("4_cfr28")]
 InputArcs = [NodePath("../ArcIdle")]
-OutputArcs = [NodePath("../ArcMove")]
+OutputArcs = [NodePath("../ArcAttack")]
 
-[node name="Trigger" type="Node" parent="AnimationNetwork/OnMove"]
+[node name="Trigger" type="Node" parent="AnimationNetwork/OnAttack"]
 script = ExtResource("5_rikul")
 ActionName = "Sample1"
 
 [node name="OnIdle" parent="AnimationNetwork" node_paths=PackedStringArray("InputArcs", "OutputArcs") instance=ExtResource("4_cfr28")]
-InputArcs = [NodePath("../ArcMove")]
+InputArcs = [NodePath("../ArcAttack")]
 OutputArcs = [NodePath("../ArcIdle")]
 
 [node name="Trigger" type="Node" parent="AnimationNetwork/OnIdle"]
@@ -229,9 +229,9 @@ script = ExtResource("7_sexj0")
 AnimatedSprite = NodePath("../../../AnimatedSprite2D")
 AnimationName = "idle_down"
 
-[node name="MovingPlace" parent="AnimationNetwork" instance=ExtResource("4_omdsq")]
+[node name="AttackPlace" parent="AnimationNetwork" instance=ExtResource("4_omdsq")]
 
-[node name="Action" type="Node" parent="AnimationNetwork/MovingPlace" node_paths=PackedStringArray("AnimatedSprite")]
+[node name="Action" type="Node" parent="AnimationNetwork/AttackPlace" node_paths=PackedStringArray("AnimatedSprite")]
 script = ExtResource("7_sexj0")
 AnimatedSprite = NodePath("../../../AnimatedSprite2D")
 AnimationName = "attack_down"
@@ -239,5 +239,5 @@ AnimationName = "attack_down"
 [node name="ArcIdle" parent="AnimationNetwork" node_paths=PackedStringArray("Place") instance=ExtResource("6_j3ub5")]
 Place = NodePath("../IdlePlace")
 
-[node name="ArcMove" parent="AnimationNetwork" node_paths=PackedStringArray("Place") instance=ExtResource("6_j3ub5")]
-Place = NodePath("../MovingPlace")
+[node name="ArcAttack" parent="AnimationNetwork" node_paths=PackedStringArray("Place") instance=ExtResource("6_j3ub5")]
+Place = NodePath("../AttackPlace")
