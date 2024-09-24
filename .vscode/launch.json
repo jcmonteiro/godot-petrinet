@@ -10,5 +10,17 @@
             "type": "godot",
             "request": "launch",
         },
+        // Launch Godot with .NET debugger
+        {
+            "name": "Godot .NET Debugger",
+            "type": "coreclr",
+            "request": "launch",
+            "program": "/Applications/Godot_mono.app/Contents/MacOS/Godot",
+            "preLaunchTask": "dotnet: build",
+            "cwd": "${workspaceFolder}",
+            "args": [
+                "--path", "${workspaceFolder}",
+            ],
+        }
     ]
 }
