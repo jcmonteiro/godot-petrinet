@@ -1,10 +1,15 @@
-[gd_scene load_steps=2 format=3 uid="uid://chejkbnh71irx"]
+[gd_scene load_steps=3 format=3 uid="uid://chejkbnh71irx"]
 
 [ext_resource type="PackedScene" uid="uid://wxvi7d4uoupo" path="res://scenes/player.tscn" id="1_27yqs"]
+[ext_resource type="PackedScene" uid="uid://djdka0sbgxt1y" path="res://scenes/player_with_inheritance.tscn" id="2_5mgp2"]
 
 [node name="Game" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_27yqs")]
+position = Vector2(-27, 0)
 
 [node name="Camera" type="Camera2D" parent="."]
 zoom = Vector2(5, 5)
+
+[node name="Player with Inheritance" parent="." instance=ExtResource("2_5mgp2")]
+position = Vector2(27, 0)
