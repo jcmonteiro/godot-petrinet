@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://dw7adg81jemt2"]
 
-[ext_resource type="Script" path="res://scripts/petri/PetriArc.cs" id="1_hahjh"]
+[ext_resource type="Script" path="res://scripts/petri-composition/PetriArc.cs" id="1_hahjh"]
 
 [node name="Arc" type="Node"]
 script = ExtResource("1_hahjh")

@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bpm6j1jk3hua7"]
 
-[ext_resource type="Script" path="res://scripts/petri/PetriPlace.cs" id="1_e5bij"]
+[ext_resource type="Script" path="res://scripts/petri-composition/PetriPlace.cs" id="1_e5bij"]
 
 [node name="Place" type="Node"]
 script = ExtResource("1_e5bij")

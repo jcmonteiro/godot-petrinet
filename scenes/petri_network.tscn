@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://cix5aacyslrcd"]
 
-[ext_resource type="Script" path="res://scripts/petri/PetriNetwork.cs" id="1_jbjpc"]
+[ext_resource type="Script" path="res://scripts/petri-composition/PetriNetwork.cs" id="1_jbjpc"]
 
 [node name="Network" type="Node"]
 script = ExtResource("1_jbjpc")

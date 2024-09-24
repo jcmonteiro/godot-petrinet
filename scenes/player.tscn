@@ -5,9 +5,9 @@
 [ext_resource type="PackedScene" uid="uid://cix5aacyslrcd" path="res://scenes/petri_network.tscn" id="3_b1lop"]
 [ext_resource type="PackedScene" uid="uid://hfjrmoi54toa" path="res://scenes/petri_transition.tscn" id="4_cfr28"]
 [ext_resource type="PackedScene" uid="uid://bpm6j1jk3hua7" path="res://scenes/petri_place.tscn" id="4_omdsq"]
-[ext_resource type="Script" path="res://scripts/petri/InputTrigger.cs" id="5_rikul"]
+[ext_resource type="Script" path="res://scripts/petri-composition/InputTrigger.cs" id="5_rikul"]
 [ext_resource type="PackedScene" uid="uid://dw7adg81jemt2" path="res://scenes/petri_arc.tscn" id="6_j3ub5"]
-[ext_resource type="Script" path="res://scripts/petri/SpriteAction.cs" id="7_sexj0"]
+[ext_resource type="Script" path="res://scripts/petri-composition/SpriteAction.cs" id="7_sexj0"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_dvx1e"]
 atlas = ExtResource("1_kpmqt")
