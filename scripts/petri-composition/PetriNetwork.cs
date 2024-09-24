@@ -1,6 +1,8 @@
 using Godot;
 using System.Collections.Generic;
 
+namespace PetriComposition;
+
 public partial class PetriNetwork : Node
 {
     private List<PetriPlace> _places = new List<PetriPlace>();

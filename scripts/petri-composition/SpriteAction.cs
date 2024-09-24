@@ -2,6 +2,8 @@ using Godot;
 using System;
 using System.Diagnostics;
 
+namespace PetriComposition;
+
 public partial class SpriteAction : PetriPlaceAction
 {
 	[Export]

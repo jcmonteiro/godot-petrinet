@@ -1,5 +1,7 @@
 using Godot;
 
+namespace PetriComposition;
+
 public partial class InputTrigger : Node
 {
 	[Export]

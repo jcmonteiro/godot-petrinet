@@ -1,5 +1,7 @@
 using Godot;
 
+namespace PetriComposition;
+
 public abstract partial class PetriPlaceAction : Node
 {
     public override void _Ready()

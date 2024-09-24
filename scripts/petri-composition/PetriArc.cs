@@ -1,5 +1,7 @@
 using Godot;
 
+namespace PetriComposition;
+
 public partial class PetriArc : Node
 {
 	[Export]

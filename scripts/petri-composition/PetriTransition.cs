@@ -1,5 +1,7 @@
 using Godot;
 
+namespace PetriComposition;
+
 public partial class PetriTransition : Node
 {
     [Export]

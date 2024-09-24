@@ -1,6 +1,8 @@
 using System;
 using Godot;
 
+namespace PetriComposition;
+
 public partial class PetriPlace : Node
 {
     [Signal]
