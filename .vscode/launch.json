@@ -21,6 +21,7 @@
             "args": [
                 "--path", "${workspaceFolder}",
             ],
+            "internalConsoleOptions": "openOnSessionStart"
         }
     ]
 }
