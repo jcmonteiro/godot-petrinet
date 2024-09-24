@@ -3,7 +3,7 @@ using Godot;
 
 namespace PetriInheritance;
 
-public abstract partial class PetriPlace : Node
+public partial class PetriPlace : Node
 {
     [Signal]
     public delegate void TokensChangedEventHandler(int tokens);
@@ -64,6 +64,6 @@ public abstract partial class PetriPlace : Node
         return _tokens > 0;
     }
 
-    public abstract void OnActivationChanged(bool isActive);
-    public abstract void OnTokensChanged(int tokens);
+    public virtual void OnActivationChanged(bool _isActive) { }
+    public virtual void OnTokensChanged(int _tokens) { }
 }

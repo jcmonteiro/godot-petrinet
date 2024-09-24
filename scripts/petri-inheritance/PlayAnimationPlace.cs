@@ -4,7 +4,7 @@ using System.Diagnostics;
 
 namespace PetriInheritance;
 
-public partial class SpriteAction : PetriPlace
+public partial class PlayAnimationPlace : PetriPlace
 {
 	[Export]
 	public AnimatedSprite2D AnimatedSprite { get; set; }
@@ -29,5 +29,6 @@ public partial class SpriteAction : PetriPlace
 
 	public override void OnTokensChanged(int _tokens)
 	{
+		// overridden just for demonstration purposes
 	}
 }

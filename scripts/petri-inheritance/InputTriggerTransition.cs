@@ -2,7 +2,7 @@ using Godot;
 
 namespace PetriInheritance;
 
-public partial class InputTrigger : PetriTransition
+public partial class InputTriggerTransition : PetriTransition
 {
 	[Export]
 	public string ActionName { get; set; }
